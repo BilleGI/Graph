@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.5)
+
+project(1 LANGUAGES CXX)
+
+set(MY_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/include)
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+add_subdirectory(src)
+
+install(TARGETS 1
+    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
